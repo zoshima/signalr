@@ -1,0 +1,10 @@
+<div class="message-list-container">
+  <div class="message-container" *ngFor="let message of messages">
+    {{ message | json }}
+  </div>
+</div>
+
+<div class="input-container">
+  <input type="text" #messageInput />
+  <input type="button" value="Send" (click)="onSendClick()" />
+</div>
